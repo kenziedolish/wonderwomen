@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_job_data"
         android:icon="@drawable/ic_work_black_24dp"
-        android:title="@string/title_home" />
+        android:title="Job Data" />
 
     <item
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_person_black_24dp"
-        android:title="@string/title_dashboard" />
+        android:title="@string/title_profile" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_education"
         android:icon="@drawable/ic_school_black_24dp"
-        android:title="@string/title_notifications" />
+        android:title="@string/title_education" />
 
 </menu>

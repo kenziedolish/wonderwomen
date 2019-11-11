@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101330"
+    android:orientation="vertical">
+
+
+    <!-- Main Title -->
+    <TextView
+        android:id="@+id/education_label"
+        android:layout_width="421dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Online Resources for Professional Studies"
+        android:textColor="@color/colorWhite"
+        android:textSize="36sp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Label for Coursera -->
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingTop="50sp"
+                android:text="@string/coursera"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <ImageButton
+                android:id="@+id/courseraButton"
+                android:background="#101330"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="25sp"
+                app:srcCompat="@drawable/courseralogo" />
+
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingTop="50sp"
+                android:text="@string/edx"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <ImageButton
+                android:id="@+id/edxButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#101330"
+                android:paddingTop="25sp"
+                app:srcCompat="@drawable/edxlogo" />
+
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingTop="50sp"
+                android:text="@string/linkedIn"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <ImageButton
+                android:id="@+id/linkedInButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#101330"
+                android:paddingTop="25sp"
+                app:srcCompat="@drawable/linkedinlogo" />
+
+            <TextView
+                android:textColor="@color/colorWhite"
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingTop="50sp"
+                android:text="@string/treehouse"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <ImageButton
+                android:id="@+id/treehouseButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#101330"
+                android:paddingTop="25sp"
+                app:srcCompat="@drawable/treehouselogo" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

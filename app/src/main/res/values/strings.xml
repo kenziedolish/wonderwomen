@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">Pinhole</string>
-    <string name="title_home">Job Data</string>
-    <string name="title_dashboard">Profile</string>
-    <string name="title_notifications">Qualifications</string>
+    <string name="coursera">Coursera</string>
+    <string name="edx">EdX</string>
+    <string name="linkedIn">LinkedIn</string>
+    <string name="treehouse">Treehouse</string>
+    <string name="title_job_data">Job Data</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_education">Education</string>
+    <string name="url_coursera">http://www.coursera.com</string>
+    <string name="url_edx">http://www.edx.com</string>
+    <string name="url_linkedin">http://www.linkedin.com</string>
+    <string name="url_treehouse">http://www.teamtreehouse.com</string>
+
 </resources>

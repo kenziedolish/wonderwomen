@@ -15,14 +15,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class HomeFragment extends Fragment implements MyRecyclerViewAdapter.ItemClickListener {
+public class JobDataFragment extends Fragment implements MyRecyclerViewAdapter.ItemClickListener {
 
     MyRecyclerViewAdapter adapter;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
+        View root = inflater.inflate(R.layout.fragment_job_data, container, false);
 
         //populate recyclerview
         ArrayList<String> jobs = new ArrayList<>();
