@@ -8,18 +8,24 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.ViewHolder> {
 
-    private List<String> mData;
+    private ArrayList<JobData> mData = new ArrayList<>();
     private LayoutInflater mInflater;
     private ItemClickListener mClickListener;
 
     // data is passed into the constructor
-    public MyRecyclerViewAdapter(Context context, List<String> data) {
+    public MyRecyclerViewAdapter(Context context, ArrayList<JobData> myArrayList) {
         this.mInflater = LayoutInflater.from(context);
-        this.mData = data;
+        this.mData = myArrayList;
+    }
+
+    void updateDataSet(ArrayList<JobData> myArrayList){
+        mData = myArrayList;
+        notifyDataSetChanged();
     }
 
     // inflates the row layout from xml when needed
@@ -32,8 +38,9 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     // binds the data to the TextView in each row
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        String animal = mData.get(position);
-        holder.myTextView.setText(animal);
+        JobData jobData = mData.get(position);
+        holder.myTextView.setText(jobData.getAnnual_salary());
+        holder.myTextView.setText(jobData.getJob_title());
     }
 
     // total number of rows
@@ -60,7 +67,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     }
 
     // convenience method for getting data at click position
-    String getItem(int id) {
+    JobData getItem(int id) {
         return mData.get(id);
     }
 

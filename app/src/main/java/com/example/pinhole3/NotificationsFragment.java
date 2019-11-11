@@ -18,50 +18,50 @@ import com.example.pinhole3.R;
 
 import java.util.ArrayList;
 
-public class NotificationsFragment extends Fragment implements MyRecyclerViewAdapter.ItemClickListener {
+public class NotificationsFragment extends Fragment {
 
-    MyRecyclerViewAdapter adapter;
+    //MyRecyclerViewAdapter adapter;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_notifications, container, false);
 
-        //populate recyclerview
-        ArrayList<String> jobs = new ArrayList<>();
-        jobs.add("Location: New York, NY\n" + "Job: Software Engineer\n" + "Salary: $100,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: IT Help Desk\n" + "Salary: $50,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Scrum Master\n" + "Salary: $120,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Product Manager\n" + "Salary: $80,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Software Engineer\n" + "Salary: $92,500\n");
-        jobs.add("Location: New York, NY\n" + "Job: Front-End Developer\n" + "Salary: $85,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Full Stack Developer\n" + "Salary: $105,500\n");
-        jobs.add("Location: New York, NY\n" + "Job: Back-End Developer\n" + "Salary: $95,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Software Engineer\n" + "Salary: $100,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: IT Help Desk\n" + "Salary: $50,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Scrum Master\n" + "Salary: $120,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Product Manager\n" + "Salary: $80,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Software Engineer\n" + "Salary: $92,500\n");
-        jobs.add("Location: New York, NY\n" + "Job: Front-End Developer\n" + "Salary: $85,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Full Stack Developer\n" + "Salary: $105,500\n");
-        jobs.add("Location: New York, NY\n" + "Job: Back-End Developer\n" + "Salary: $95,000\n");
-
-        // set up the RecyclerView
-        RecyclerView recyclerView = root.findViewById(R.id.rvAnimals);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
-        adapter = new MyRecyclerViewAdapter(this.getContext(), jobs);
-        adapter.setClickListener(this);
-        recyclerView.setAdapter(adapter);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-
-        recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(),
-                DividerItemDecoration.VERTICAL));
+//        //populate recyclerview
+//        ArrayList<String> jobs = new ArrayList<>();
+//        jobs.add("Location: New York, NY\n" + "Job: Software Engineer\n" + "Salary: $100,000\n");
+//        jobs.add("Location: New York, NY\n" + "Job: IT Help Desk\n" + "Salary: $50,000\n");
+//        jobs.add("Location: New York, NY\n" + "Job: Scrum Master\n" + "Salary: $120,000\n");
+//        jobs.add("Location: New York, NY\n" + "Job: Product Manager\n" + "Salary: $80,000\n");
+//        jobs.add("Location: New York, NY\n" + "Job: Software Engineer\n" + "Salary: $92,500\n");
+//        jobs.add("Location: New York, NY\n" + "Job: Front-End Developer\n" + "Salary: $85,000\n");
+//        jobs.add("Location: New York, NY\n" + "Job: Full Stack Developer\n" + "Salary: $105,500\n");
+//        jobs.add("Location: New York, NY\n" + "Job: Back-End Developer\n" + "Salary: $95,000\n");
+//        jobs.add("Location: New York, NY\n" + "Job: Software Engineer\n" + "Salary: $100,000\n");
+//        jobs.add("Location: New York, NY\n" + "Job: IT Help Desk\n" + "Salary: $50,000\n");
+//        jobs.add("Location: New York, NY\n" + "Job: Scrum Master\n" + "Salary: $120,000\n");
+//        jobs.add("Location: New York, NY\n" + "Job: Product Manager\n" + "Salary: $80,000\n");
+//        jobs.add("Location: New York, NY\n" + "Job: Software Engineer\n" + "Salary: $92,500\n");
+//        jobs.add("Location: New York, NY\n" + "Job: Front-End Developer\n" + "Salary: $85,000\n");
+//        jobs.add("Location: New York, NY\n" + "Job: Full Stack Developer\n" + "Salary: $105,500\n");
+//        jobs.add("Location: New York, NY\n" + "Job: Back-End Developer\n" + "Salary: $95,000\n");
+//
+//        // set up the RecyclerView
+//        RecyclerView recyclerView = root.findViewById(R.id.rvAnimals);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
+//        adapter = new MyRecyclerViewAdapter(this.getContext());
+//        adapter.setClickListener(this);
+//        recyclerView.setAdapter(adapter);
+//        recyclerView.setItemAnimator(new DefaultItemAnimator());
+//
+//        recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(),
+//                DividerItemDecoration.VERTICAL));
 
         return root;
     }
 
-    @Override
-    public void onItemClick(View view, int position) {
-        Toast.makeText(this.getContext(), "You clicked " + adapter.getItem(position) + " on row number " + position, Toast.LENGTH_SHORT).show();
-    }
+//    @Override
+//    public void onItemClick(View view, int position) {
+//        Toast.makeText(this.getContext(), "You clicked " + adapter.getItem(position) + " on row number " + position, Toast.LENGTH_SHORT).show();
+//    }
 }
