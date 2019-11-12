@@ -26,22 +26,18 @@ public class HomeFragment extends Fragment implements MyRecyclerViewAdapter.Item
 
         //populate recyclerview
         ArrayList<String> jobs = new ArrayList<>();
-        jobs.add("Location: New York, NY\n" + "Job: Software Engineer\n" + "Salary: $100,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: IT Help Desk\n" + "Salary: $50,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Scrum Master\n" + "Salary: $120,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Product Manager\n" + "Salary: $80,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Software Engineer\n" + "Salary: $92,500\n");
-        jobs.add("Location: New York, NY\n" + "Job: Front-End Developer\n" + "Salary: $85,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Full Stack Developer\n" + "Salary: $105,500\n");
-        jobs.add("Location: New York, NY\n" + "Job: Back-End Developer\n" + "Salary: $95,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Software Engineer\n" + "Salary: $100,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: IT Help Desk\n" + "Salary: $50,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Scrum Master\n" + "Salary: $120,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Product Manager\n" + "Salary: $80,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Software Engineer\n" + "Salary: $92,500\n");
-        jobs.add("Location: New York, NY\n" + "Job: Front-End Developer\n" + "Salary: $85,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Full Stack Developer\n" + "Salary: $105,500\n");
-        jobs.add("Location: New York, NY\n" + "Job: Back-End Developer\n" + "Salary: $95,000\n");
+        jobs.add("State: AL\n" + "Job: Chief Executives\n" + "Salary: $204,590\n");
+        jobs.add("State: AL\n" + "Job: General and Operations Manager\n" + "Salary: $118,440\n");
+        jobs.add("State: AL\n" + "Job: Industrial Production Manager\n" + "Salary: $103,430\n");
+        jobs.add("State: AL\n" + "Job: Aerospace Engineering and Operations Technician\n" + "Salary: $60,630\n");
+        jobs.add("State: AL\n" + "Job: Civil Engineering Technician\n" + "Salary: $43,060\n");
+        jobs.add("State: AL\n" + "Job: Electrical and Electronics Engineering Technician\n" + "Salary: $61,120\n");
+        jobs.add("State: AL\n" + "Job: Electro-Mechanical Technician\n" + "Salary: $62,140\n");
+        jobs.add("State: AL\n" + "Job: Environmental Engineering Technician\n" + "Salary: $50,540\n");
+        jobs.add("State: AL\n" + "Job: Mechanical Engineering Technician\n" + "Salary: $57,670\n");
+        jobs.add("State: AL\n" + "Job: Surveying and Mapping Technician\n" + "Salary: $42,850\n");
+        jobs.add("State: AL\n" + "Job: Food Scientists and Technologist\n" + "Salary: $54,340\n");
+
 
         // set up the RecyclerView
         RecyclerView recyclerView = root.findViewById(R.id.rvAnimals);

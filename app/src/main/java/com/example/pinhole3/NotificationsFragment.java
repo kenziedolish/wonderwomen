@@ -1,9 +1,12 @@
 package com.example.pinhole3;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -18,50 +21,69 @@ import com.example.pinhole3.R;
 
 import java.util.ArrayList;
 
-public class NotificationsFragment extends Fragment implements MyRecyclerViewAdapter.ItemClickListener {
-
-    MyRecyclerViewAdapter adapter;
+public class NotificationsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-
         View root = inflater.inflate(R.layout.fragment_notifications, container, false);
 
-        //populate recyclerview
-        ArrayList<String> jobs = new ArrayList<>();
-        jobs.add("Location: New York, NY\n" + "Job: Software Engineer\n" + "Salary: $100,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: IT Help Desk\n" + "Salary: $50,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Scrum Master\n" + "Salary: $120,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Product Manager\n" + "Salary: $80,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Software Engineer\n" + "Salary: $92,500\n");
-        jobs.add("Location: New York, NY\n" + "Job: Front-End Developer\n" + "Salary: $85,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Full Stack Developer\n" + "Salary: $105,500\n");
-        jobs.add("Location: New York, NY\n" + "Job: Back-End Developer\n" + "Salary: $95,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Software Engineer\n" + "Salary: $100,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: IT Help Desk\n" + "Salary: $50,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Scrum Master\n" + "Salary: $120,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Product Manager\n" + "Salary: $80,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Software Engineer\n" + "Salary: $92,500\n");
-        jobs.add("Location: New York, NY\n" + "Job: Front-End Developer\n" + "Salary: $85,000\n");
-        jobs.add("Location: New York, NY\n" + "Job: Full Stack Developer\n" + "Salary: $105,500\n");
-        jobs.add("Location: New York, NY\n" + "Job: Back-End Developer\n" + "Salary: $95,000\n");
 
-        // set up the RecyclerView
-        RecyclerView recyclerView = root.findViewById(R.id.rvAnimals);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
-        adapter = new MyRecyclerViewAdapter(this.getContext(), jobs);
-        adapter.setClickListener(this);
-        recyclerView.setAdapter(adapter);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        ImageButton courseraButton = (ImageButton) root.findViewById(R.id.courseraButton);
+        courseraButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(),
-                DividerItemDecoration.VERTICAL));
+
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.coursera.com"));
+                startActivity(browserIntent);
+            }
+
+        });
+
+
+        ImageButton edxButton = (ImageButton) root.findViewById(R.id.edxButton);
+        edxButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.edx.com"));
+                startActivity(browserIntent);
+            }
+
+        });
+
+
+        ImageButton linkedInButton = (ImageButton) root.findViewById(R.id.linkedInButton);
+        linkedInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com"));
+                startActivity(browserIntent);
+            }
+
+        });
+
+
+        ImageButton treehouseButton = (ImageButton) root.findViewById(R.id.treehouseButton);
+        treehouseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.teamtreehouse.com"));
+                startActivity(browserIntent);
+            }
+
+        });
+
+
+
 
         return root;
-    }
 
-    @Override
-    public void onItemClick(View view, int position) {
-        Toast.makeText(this.getContext(), "You clicked " + adapter.getItem(position) + " on row number " + position, Toast.LENGTH_SHORT).show();
     }
 }
+
