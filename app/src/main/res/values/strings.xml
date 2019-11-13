@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Pinhole</string>
-    <string name="title_home">Job Data</string>
-    <string name="title_dashboard">Profile</string>
-    <string name="title_notifications">Qualifications</string>
+    <string name="title_jobdata">Job Data</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_qualifications">Qualifications</string>
+    <string name="title_education">Education</string>
 </resources>

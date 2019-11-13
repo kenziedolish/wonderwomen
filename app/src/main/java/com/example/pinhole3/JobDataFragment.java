@@ -15,14 +15,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class HomeFragment extends Fragment implements MyRecyclerViewAdapter.ItemClickListener {
+public class JobDataFragment extends Fragment implements MyRecyclerViewAdapter.ItemClickListener {
 
     MyRecyclerViewAdapter adapter;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
+        View root = inflater.inflate(R.layout.fragment_jobdata, container, false);
 
         //populate recyclerview
         ArrayList<String> jobs = new ArrayList<>();
@@ -40,7 +40,7 @@ public class HomeFragment extends Fragment implements MyRecyclerViewAdapter.Item
 
 
         // set up the RecyclerView
-        RecyclerView recyclerView = root.findViewById(R.id.rvAnimals);
+        RecyclerView recyclerView = root.findViewById(R.id.jobdatalist);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
         adapter = new MyRecyclerViewAdapter(this.getContext(), jobs);
         adapter.setClickListener(this);
