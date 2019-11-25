@@ -6,4 +6,19 @@
     android:layout_height="match_parent"
     android:background="@color/colorGrey"
     android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:soundEffectsEnabled="true"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:id="@+id/qualificationsText"
+        android:layout_width="match_parent"
+        android:layout_height="731dp"
+        android:text="TextView"
+        android:textColor="#5A5A5A"
+        android:textSize="20sp" />
 </LinearLayout>
