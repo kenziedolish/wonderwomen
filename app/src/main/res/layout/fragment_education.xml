@@ -2,111 +2,116 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/colorGrey"
     android:layout_height="match_parent"
-    android:background="#101330"
     android:orientation="vertical">
 
 
+
+
     <!-- Main Title -->
-    <TextView
-        android:id="@+id/education_label"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:text="Online Resources for Professional Studies"
-        android:textColor="@color/colorWhite"
-        android:textSize="36sp" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
         android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/colorGrey"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Select a button below to be redirected to an external page">
+            </TextView>
             <!-- Label for Coursera -->
-            <TextView
-                android:textColor="@color/colorWhite"
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:paddingTop="50sp"
-                android:text="Coursera"
-                android:textAllCaps="true"
-                android:textSize="24sp"
-                android:textStyle="italic" />
 
-            <ImageButton
-                android:id="@+id/courseraButton"
-                android:background="#101330"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="25sp"
-                app:srcCompat="@mipmap/courseralogo" />
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="25dp"
+                    android:text="Coursera"
+                    android:textColor="@android:color/black"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/coursera_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#101330"
+                    android:paddingTop="0dp"
+                    app:srcCompat="@mipmap/courseralogo" />
 
             <TextView
-                android:textColor="@color/colorWhite"
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="left"
+                android:gravity="center"
                 android:paddingTop="50sp"
                 android:text="EDX"
-                android:textAllCaps="true"
-                android:textSize="24sp"
-                android:textStyle="italic" />
+                android:textColor="@android:color/black"
+                android:textSize="21sp"
+                android:textStyle="bold" />
 
             <ImageButton
-                android:id="@+id/edxButton"
-                android:layout_width="match_parent"
+                android:id="@+id/edx_button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#101330"
-                android:paddingTop="25sp"
+                android:layout_gravity="center"
+                android:background="@color/colorGrey"
+                android:paddingTop="0dp"
                 app:srcCompat="@mipmap/edxlogo" />
 
             <TextView
-                android:textColor="@color/colorWhite"
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="left"
+                android:gravity="center"
                 android:paddingTop="50sp"
                 android:text="linkedIn"
-                android:textAllCaps="true"
-                android:textSize="24sp"
-                android:textStyle="italic" />
+                android:textColor="@android:color/black"
+                android:textSize="21sp"
+                android:textStyle="bold" />
 
             <ImageButton
-                android:id="@+id/linkedInButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#101330"
-                android:paddingTop="25sp"
+                android:id="@+id/linkedIn_button"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:paddingTop="0dp"
                 app:srcCompat="@mipmap/linkedinlogo" />
 
             <TextView
-                android:textColor="@color/colorWhite"
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="left"
+                android:gravity="center"
                 android:paddingTop="50sp"
                 android:text="Treehouse"
-                android:textAllCaps="true"
-                android:textSize="24sp"
-                android:textStyle="italic" />
+                android:textColor="@android:color/black"
+                android:textSize="21sp"
+                android:textStyle="bold" />
 
             <ImageButton
-                android:id="@+id/treehouseButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#101330"
-                android:paddingTop="25sp"
+                android:id="@+id/treehouse_button"
+                android:layout_width="65dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:paddingTop="0dp"
                 app:srcCompat="@mipmap/treehouselogo" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
