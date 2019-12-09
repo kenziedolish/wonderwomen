@@ -34,7 +34,7 @@ public class RecyclerView_Config {
 
             mJobTitle = (TextView) itemView.findViewById(R.id.job_titletxt);
             mMajor = (TextView) itemView.findViewById(R.id.majortxt);
-            mAnnualSalary = (TextView) itemView.findViewById(R.id.majortxt);
+            mAnnualSalary = (TextView) itemView.findViewById(R.id.annual_salarytxt);
             mHourlyRate = (TextView) itemView.findViewById(R.id.hourlyRatetxt);
 
         }
