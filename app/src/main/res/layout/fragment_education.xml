@@ -3,12 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorGrey">
+    android:background="@color/colorGrey"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        >
 
         <TextView
             android:layout_width="wrap_content"
@@ -16,8 +18,7 @@
             android:layout_gravity="center_horizontal"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:text="Online Resources"
-            android:textColor="@color/colorPrimaryDark">
+            android:text="Online Resources">
 
         </TextView>
 
@@ -25,6 +26,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/mtrl_card_spacing"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="6dp"
             android:layout_marginTop="@dimen/mtrl_card_spacing"
             android:layout_marginRight="@dimen/mtrl_card_spacing"
             android:minHeight="200dp">
@@ -44,6 +47,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/mtrl_card_spacing"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="6dp"
             android:layout_marginTop="@dimen/mtrl_card_spacing"
             android:layout_marginRight="@dimen/mtrl_card_spacing"
             android:minHeight="200dp">
@@ -79,6 +84,8 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="6dp"
             android:layout_marginLeft="@dimen/mtrl_card_spacing"
             android:layout_marginTop="@dimen/mtrl_card_spacing"
             android:layout_marginRight="@dimen/mtrl_card_spacing"
