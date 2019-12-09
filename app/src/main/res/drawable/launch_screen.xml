@@ -8,10 +8,9 @@
 
     <item>
 
-        <bitmap
-            android:src="@mipmap/biglogobw"
-            android:gravity="center"
-            />
+        <bitmap android:src="@mipmap/biglogobw"
+            android:gravity="center"/>
 
-    </item>
+
+     </item>
 </layer-list>

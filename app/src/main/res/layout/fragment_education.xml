@@ -1,114 +1,101 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#101330"
-    android:orientation="vertical">
+    android:background="@color/colorGrey">
 
-
-    <!-- Main Title -->
-    <TextView
-        android:id="@+id/education_label"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:text="Online Resources for Professional Studies"
-        android:textColor="@color/colorWhite"
-        android:textSize="36sp" />
+        android:orientation="vertical" >
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Online Resources"
+            android:textColor="@color/colorPrimaryDark">
 
-        <LinearLayout
+        </TextView>
+
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <!-- Label for Coursera -->
+            android:layout_marginLeft="@dimen/mtrl_card_spacing"
+            android:layout_marginTop="@dimen/mtrl_card_spacing"
+            android:layout_marginRight="@dimen/mtrl_card_spacing"
+            android:minHeight="200dp">
             <TextView
-                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Government Resources"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mtrl_card_spacing"
+            android:layout_marginTop="@dimen/mtrl_card_spacing"
+            android:layout_marginRight="@dimen/mtrl_card_spacing"
+            android:minHeight="200dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="External Websites"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
                 android:id="@+id/textView4"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:paddingTop="50sp"
+                android:paddingTop="30dp"
+                android:paddingLeft="5dp"
                 android:text="Coursera"
-                android:textAllCaps="true"
-                android:textSize="24sp"
-                android:textStyle="italic" />
+                android:textSize="16dp"
+                />
 
             <ImageButton
-                android:id="@+id/courseraButton"
-                android:background="#101330"
-                android:layout_width="match_parent"
+                android:id="@+id/coursera_button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="25sp"
+                android:layout_gravity="left"
+                android:layout_marginTop="55dp"
+                android:paddingLeft="5dp"
+                android:background="@color/colorWhite"
                 app:srcCompat="@mipmap/courseralogo" />
 
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mtrl_card_spacing"
+            android:layout_marginTop="@dimen/mtrl_card_spacing"
+            android:layout_marginRight="@dimen/mtrl_card_spacing"
+            android:minHeight="200dp">
             <TextView
-                android:textColor="@color/colorWhite"
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="left"
-                android:paddingTop="50sp"
-                android:text="EDX"
-                android:textAllCaps="true"
-                android:textSize="24sp"
-                android:textStyle="italic" />
+                android:text="Other"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimaryDark"/>
 
-            <ImageButton
-                android:id="@+id/edxButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#101330"
-                android:paddingTop="25sp"
-                app:srcCompat="@mipmap/edxlogo" />
+        </com.google.android.material.card.MaterialCardView>
 
-            <TextView
-                android:textColor="@color/colorWhite"
-                android:id="@+id/textView6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:paddingTop="50sp"
-                android:text="linkedIn"
-                android:textAllCaps="true"
-                android:textSize="24sp"
-                android:textStyle="italic" />
 
-            <ImageButton
-                android:id="@+id/linkedInButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#101330"
-                android:paddingTop="25sp"
-                app:srcCompat="@mipmap/linkedinlogo" />
+    </LinearLayout>
+</ScrollView>
 
-            <TextView
-                android:textColor="@color/colorWhite"
-                android:id="@+id/textView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="left"
-                android:paddingTop="50sp"
-                android:text="Treehouse"
-                android:textAllCaps="true"
-                android:textSize="24sp"
-                android:textStyle="italic" />
 
-            <ImageButton
-                android:id="@+id/treehouseButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#101330"
-                android:paddingTop="25sp"
-                app:srcCompat="@mipmap/treehouselogo" />
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
 
-</LinearLayout>
+
