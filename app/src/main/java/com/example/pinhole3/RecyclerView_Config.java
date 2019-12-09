@@ -2,7 +2,6 @@ package com.example.pinhole3;
 
 import android.content.Context;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -34,17 +33,17 @@ public class RecyclerView_Config {
             super(LayoutInflater.from(mContext).inflate(R.layout.job_list_item, parent, false));
 
             mJobTitle = (TextView) itemView.findViewById(R.id.job_titletxt);
-            mAnnualSalary = (TextView) itemView.findViewById(R.id.annual_salarytxt);
             mMajor = (TextView) itemView.findViewById(R.id.majortxt);
+            mAnnualSalary = (TextView) itemView.findViewById(R.id.majortxt);
             mHourlyRate = (TextView) itemView.findViewById(R.id.hourlyRatetxt);
 
         }
 
         public void bind(JobDTO job, String key){
             mJobTitle.setText(job.getJOB_TITLE());
-            mAnnualSalary.setText(job.getANNUAL_SALARY());
-            mMajor.setText(job.getMAJOR());
-            mHourlyRate.setText(job.getHOURLY_RATE());
+            mAnnualSalary.setText("Annual Salary: "+job.getANNUAL_SALARY());
+            mMajor.setText("Major: "+job.getMAJOR());
+            mHourlyRate.setText("Hourly Rate: "+job.getHOURLY_RATE());
             this.key = key;
         }
 
