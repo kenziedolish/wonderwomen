@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/navigation_jobdata"
         android:name="com.example.pinhole3.JobDataFragment"
-        android:label="@string/title_jobdata"
+        android:label="Job Data"
         tools:layout="@layout/fragment_jobdata" />
 
     <fragment

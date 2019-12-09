@@ -11,7 +11,7 @@
 
     <!-- Main Title -->
 
-    <androidx.core.widget.NestedScrollView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="25dp"
@@ -30,7 +30,9 @@
                 android:layout_gravity="center_horizontal"
                 android:textStyle="bold"
                 android:textSize="20dp"
-                android:text="Select a button below to be redirected to an external page">
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Select a button below to be redirected \n to an external page">
             </TextView>
             <!-- Label for Coursera -->
 
@@ -114,6 +116,6 @@
                 android:paddingTop="0dp"
                 app:srcCompat="@mipmap/treehouselogo" />
         </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+    </ScrollView>
 
 </LinearLayout>
