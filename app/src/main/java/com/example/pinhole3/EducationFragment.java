@@ -18,41 +18,6 @@ public class EducationFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_education, container, false);
 
 
-        ImageButton courseraButton = (ImageButton) root.findViewById(R.id.courseraButton);
-        courseraButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.coursera.com"));
-                startActivity(browserIntent);
-            }
-        });
-
-        ImageButton edxButton = (ImageButton) root.findViewById(R.id.edxButton);
-        edxButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.edx.com"));
-                startActivity(browserIntent);
-            }
-        });
-
-        ImageButton linkedInButton = (ImageButton) root.findViewById(R.id.linkedInButton);
-        linkedInButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com"));
-                startActivity(browserIntent);
-            }
-        });
-
-        ImageButton treehouseButton = (ImageButton) root.findViewById(R.id.treehouseButton);
-        treehouseButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.teamtreehouse.com"));
-                startActivity(browserIntent);
-            }
-        });
 
         return root;
     }
