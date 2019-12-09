@@ -15,14 +15,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "376240309988-66tmcu9dfmvp4l8lr7lgd5ivmdoarbbh.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.pinhole3",
-            "certificate_hash": "74bccffb984fbd78a36bb47a82a94d7230ea278f"
-          }
-        },
-        {
           "client_id": "376240309988-bna8u1l3he5cfccfv4akls4oem4o57bk.apps.googleusercontent.com",
           "client_type": 3
         }

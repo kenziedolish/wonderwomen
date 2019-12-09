@@ -77,7 +77,7 @@ public class JobDataFragment extends Fragment implements MyRecyclerViewAdapter.I
 
     @Override
     public void onItemClick(View view, int position) {
-        Toast.makeText(this.getContext(), "You clicked " + adapter.getItem(position) + " on row number " + position, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this.getContext(), "You clicked " + adapter.getItem(position), Toast.LENGTH_SHORT).show();
 
         state = adapter.getItem(position);
         Intent intent = new Intent(view.getContext(),ViewJobDatabase.class );
