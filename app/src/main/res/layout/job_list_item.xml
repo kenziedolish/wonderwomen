@@ -53,11 +53,10 @@
         android:text="TextView" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/applyNowButton"
         android:layout_width="395dp"
         android:layout_height="37dp"
         android:autoLink="web"
         android:baselineAligned="false"
-        android:onClick="webIndeed"
         android:text="Apply Now" />
 </LinearLayout>
